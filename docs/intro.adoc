@@ -1,0 +1,109 @@
+[quote,James Gosling]
+____
+Java is C++ without the guns, clubs and knives.
+____
+***
+
+== Interesting facts
+
+* James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java language project in June 1991.
+* The language was initially called Oak after an oak tree that stood outside Gosling's office. Later the project went by the name Green and was finally renamed Java, from Java coffee, a type of coffee from Indonesia.
+* Sun Microsystems released the first public implementation as Java 1.0 in 1996.
+* Java promised write once, run anywhere (WORA) functionality.
+* Major web browsers soon incorporated the ability to run Java applets within web pages, that's how Java quickly became popular.
+* First release: JDK 1 - *January 23, 1996*
+* Last release: Java SE 20 - *March 21, 2023*
+
+
+== How it works
+
+* JVM - Java virtual machine -> Interprets compiled Java classes to machine tasks.
+* JRE - Java Runtime Environment -> Minimal tools to run Java program.
+* JDK - Java Development Kit -> All tools needed for development.
+
+=== Receipt:
+
+. Write Java code.
+----
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+}
+----
+. Compile the code with JDK to bytecode.
+----
+javac Main.java
+----
+. Run code on machine with JVM (JRE includes JVM).
+----
+java Main
+----
+
+== OOP
+
+* OOP - Object oriented programming -> Everything is an Object.
+* OOP has 3(~4) bases:
+** Encapsulation -> Data is locked in Object and not accessed directly.
+** Inheritance -> Object's logic can be inherited and used by other classes.
+** Polymorphism -> Interface (special class type) can define behavior contract that can be used by other classes.
+** Abstraction -> Object not reveal all functionality it has, only necessary one.
+
+== From what is Java code
+
+* Classes -> Describes skeleton of Object. Its data, methods etc.
+** Class
+** Interface
+** Enum
+** Record
+** Annotation
+
+* Object -> Exemplar of Class. Maybe many Objects but only one Class.
+** Constructor -> Used to create Objects.
+
+* Data -> Fields in Class that represent storage of data.
+** byte	- 1 byte -> -128 to 127
+** short - 2 bytes -> -32,768 to 32,767
+** int - 4 bytes -> -2,147,483,648 to 2,147,483,647
+** long	- 8 bytes -> -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+** float - 4 bytes -> 6 to 7 decimal digits
+** double -	8 bytes -> 15 decimal digits
+** boolean - 1 bit -> true or false
+** char	- 2 bytes -> character/letter or ASCII value
+** String
+
+
+* Method -> Describes behavior of Object.
+----
+public static void main(String[] args) {
+// Some implementation ...
+}
+----
+----
+[Access Specifier] [static or nothing] [Return Type] [Name]( [Parameters] ) {
+// Some implementation ...
+}
+----
+** Access Specifier:
+*** public -> Accessed from any other Classes.
+*** private -> Accessed only from its own Class.
+*** protected -> Accessed only by its inherited child Classes.
+*** Default (not written)-> Accessed by any other Class within same folder.
+
+** static or Nothing
+*** static -> Accessed without creating Object from Class.
+*** Nothing -> Accessed only from Objects.
+
+** Return Type
+*** void -> returns nothing.
+*** Any other Data type -> int, long ... Object ...
+
+** Name
+*** Any name -> Usually used camelCase style
+
+** Parameters
+*** Any data types -> int, long ... Object ...
+
+
+
+
